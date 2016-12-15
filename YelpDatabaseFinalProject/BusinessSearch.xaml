@@ -1,0 +1,104 @@
+﻿<UserControl x:Class="YelpDatabaseFinalProject.Business_Search"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YelpDatabaseFinalProject"
+             mc:Ignorable="d" 
+             Height="800" Width="1280"
+             x:Name="BusinessSearch">
+    <Grid Background="#0d65bb">
+        <GroupBox Margin="10,10,0,487" HorizontalAlignment="Left" Width="255" >
+            <GroupBox.Header>
+                <Label Foreground="White">Select Location</Label>
+            </GroupBox.Header>
+            <Grid>
+                <TextBlock Foreground="White" Text="State" Margin="10,19,197,229" RenderTransformOrigin="0.5,0.818"/>
+                <TextBlock Foreground="White" Text="City" Margin="10,54,197,197"/>
+                <TextBlock Foreground="White" Text="Zipcode" Margin="10,173,185,79"/>
+                <ComboBox x:Name="select_location_state_comboBox" HorizontalAlignment="Left" Margin="113,10,0,0" VerticalAlignment="Top" Width="120"/>
+                <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="113,54,0,0" VerticalAlignment="Top" Width="120"/>
+                <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="103" Margin="113,173,0,0" VerticalAlignment="Top" Width="120"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Margin="10,318,0,56.667"  HorizontalAlignment="Left" Width="255">
+            <GroupBox.Header>
+                <Label Foreground="White">Select Business Category</Label>
+            </GroupBox.Header>
+            <Grid>
+                <ListBox x:Name="select_business_category_listBox" HorizontalAlignment="Left" Height="269" Margin="33,10,0,0" VerticalAlignment="Top" Width="200"/>
+                <Button x:Name="add_category_button" Content="Add Category" HorizontalAlignment="Left" Margin="33,284,0,0" VerticalAlignment="Top" Width="200"/>
+                <ListBox x:Name="selected_category_listbox" HorizontalAlignment="Left" Height="90" Margin="33,309,0,0" VerticalAlignment="Top" Width="200"/>
+            </Grid>
+
+        </GroupBox>
+
+        <Button x:Name="update_button" Content="Search" HorizontalAlignment="Left" Margin="51,755,0,0" VerticalAlignment="Top" Width="200" PreviewMouseDown="update_button_MouseLeftButtonDown"/>
+
+        <GroupBox Foreground="White"  x:Name="groupBox" Header="Refine Your Search" HorizontalAlignment="Left" Margin="270,15,0,0" VerticalAlignment="Top" Height="135" Width="755">
+            <Grid>
+                <TextBlock Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="138,31,0,0" TextWrapping="Wrap" Text="Min Rating" VerticalAlignment="Top"/>
+                <TextBlock Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="136,68,0,0" TextWrapping="Wrap" Text="Max Rating" VerticalAlignment="Top"/>
+
+                <TextBlock Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="388,31,0,0" TextWrapping="Wrap" Text="Min # of Reviews" VerticalAlignment="Top"/>
+                <TextBlock Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="388,68,0,0" TextWrapping="Wrap" Text="Max # of Reviews" VerticalAlignment="Top"/>
+                <ComboBox x:Name="min_rating_comboBox" HorizontalAlignment="Left" Margin="236,31,0,0" VerticalAlignment="Top" Width="82"/>
+                <ComboBox x:Name="max_rating_comboBox" HorizontalAlignment="Left" Margin="236,68,0,0" VerticalAlignment="Top" Width="82"/>
+                <ComboBox x:Name="min_review_comboBox" HorizontalAlignment="Left" Margin="536,31,0,0" VerticalAlignment="Top" Width="82"/>
+                <ComboBox x:Name="max_review_comboBox" HorizontalAlignment="Left" Margin="536,68,0,0" VerticalAlignment="Top" Width="82"/>
+
+
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Foreground="White"  x:Name="groupBox1" Header="Search Results" HorizontalAlignment="Left" Margin="270,155,0,0" VerticalAlignment="Top" Height="620" Width="755">
+            <Grid>
+                <ListView x:Name="searchResultListView" HorizontalAlignment="Left" Height="578" Margin="10,10,0,0" VerticalAlignment="Top" Width="723" SelectionChanged="searchResultListView_SelectionChanged">
+                    <ListView.View>
+                        <GridView >
+                            <GridViewColumn Width="100" DisplayMemberBinding="{Binding Empty}">
+
+                            </GridViewColumn>
+                            <GridViewColumn  x:Name="BusinessName" Header="Business Name" Width="100" DisplayMemberBinding="{Binding Name}" >
+
+                            </GridViewColumn>
+                            <GridViewColumn x:Name="City"  Header="City" Width="100" DisplayMemberBinding="{Binding City}">
+
+                            </GridViewColumn>
+                            <GridViewColumn x:Name="State"  Header="State" Width="75" DisplayMemberBinding="{Binding State}">
+
+                            </GridViewColumn>
+                            <GridViewColumn x:Name="Zip"  Header="Zip" Width="75" DisplayMemberBinding="{Binding Zip}">
+
+                            </GridViewColumn>
+                            <GridViewColumn x:Name="AvgRating"  Header="Avg. Rating" Width="75" DisplayMemberBinding="{Binding Avg}">
+
+                            </GridViewColumn>
+                            <GridViewColumn x:Name="numReviews"  Header="# of Reviews" Width="100" DisplayMemberBinding="{Binding Reviews}">
+
+                            </GridViewColumn>
+
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Foreground="White" x:Name="groupBox2" Header="Refine Your Search" HorizontalAlignment="Left" Margin="1030,15,0,0" VerticalAlignment="Top" Height="760" Width="240">
+            <Grid>
+                <TextBlock Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="1) Select Attribute" VerticalAlignment="Top"/>
+                <TextBlock Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="10,354,0,0" TextWrapping="Wrap" Text="2) Select Value" VerticalAlignment="Top"/>
+                <TextBlock Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="10,405,0,0" TextWrapping="Wrap" Text="3) Add to selected attributes" VerticalAlignment="Top"/>
+                <TextBlock Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="10,454,0,0" TextWrapping="Wrap" Text="4) Selected Attributes" VerticalAlignment="Top"/>
+                <TreeView x:Name="attribute_treeView" HorizontalAlignment="Left" Height="315" Margin="10,34,0,0" VerticalAlignment="Top" Width="208"/>
+                <ComboBox x:Name="select_value_comboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="208" Margin="10,378,0,0"/>
+                <Button x:Name="add_attribute_value_button" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="208" Margin="10,429,0,0"/>
+                <ListBox x:Name="slected_attributes_listbox" HorizontalAlignment="Left" Height="250" Margin="10,478,0,0" VerticalAlignment="Top" Width="208"/>
+
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</UserControl>

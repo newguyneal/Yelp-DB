@@ -1,0 +1,34 @@
+﻿<Window x:Class="YelpDatabaseFinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YelpDatabaseFinalProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="896.387" Width="1334.102" Background="#0d65bb"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize" 
+        MouseDown="Window_MouseDown"
+        >
+    <Grid Background="#0d65bb">
+        <Button Content="X" Height="24" HorizontalAlignment="Left" Name="btnClose" VerticalAlignment="Top" 
+                Width="35" Background="#00000000" BorderBrush="#00000000" Click="btnClose_Click" BorderThickness="0" 
+                Cursor="Arrow" ForceCursor="False" ToolTip="Close" Foreground="White" Margin="1299,0,0,0" />
+
+        <TabControl
+		    Margin="10"
+            SelectionChanged="TabControl_SelectionChanged"
+            Background="#0d65bb">
+
+            <TabItem Header="Business Demographics">
+                <Grid x:Name="business_demographic_grid" Margin="10,5,-1,0" Background="#0d65bb"/>
+            </TabItem>
+            <TabItem Header="Business Search">
+                <Grid  x:Name="business_search_grid" Background="#0d65bb">
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

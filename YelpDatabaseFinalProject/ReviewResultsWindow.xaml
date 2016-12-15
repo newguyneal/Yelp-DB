@@ -1,0 +1,35 @@
+﻿<Window x:Class="YelpDatabaseFinalProject.ReviewResultsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YelpDatabaseFinalProject"
+        mc:Ignorable="d"
+        Title="ReviewResultsWindow" Height="659.016" Width="754.098">
+    <Grid Background="#0d65bb">
+        <ListView Name="searchResultListView" HorizontalAlignment="Left" Height="578" Margin="10,10,0,0" VerticalAlignment="Top" Width="723">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Review Date" Width="100" DisplayMemberBinding="{Binding Date}" >
+
+                    </GridViewColumn>
+                    <GridViewColumn Header="Stars" Width="100" DisplayMemberBinding="{Binding Stars}">
+
+                    </GridViewColumn>
+                    <GridViewColumn Header="Review Text" Width="325" DisplayMemberBinding="{Binding Text}">
+
+                    </GridViewColumn>
+                    <GridViewColumn Header="UserID" Width="75" DisplayMemberBinding="{Binding UID}">
+
+                    </GridViewColumn>
+                    <GridViewColumn Header="Useful Votes" Width="75" DisplayMemberBinding="{Binding UVotes}">
+
+                    </GridViewColumn>
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="close_button" Content="Close" HorizontalAlignment="Left" Margin="658,598,0,0" VerticalAlignment="Top" Width="75" MouseLeftButtonDown="close_button_MouseLeftButtonDown"/>
+
+    </Grid>
+</Window>

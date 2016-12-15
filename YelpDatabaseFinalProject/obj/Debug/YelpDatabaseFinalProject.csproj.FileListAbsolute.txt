@@ -1,0 +1,23 @@
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\bin\Debug\YelpDatabaseFinalProject.exe.config
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\bin\Debug\YelpDatabaseFinalProject.exe
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\bin\Debug\YelpDatabaseFinalProject.pdb
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\BusinessDemographics.g.cs
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\MainWindow.g.cs
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\BusinessSearch.g.cs
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\App.g.cs
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject_MarkupCompile.cache
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject_MarkupCompile.lref
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\BusinessDemographics.baml
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\MainWindow.baml
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\BusinessSearch.baml
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject.g.resources
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject.Properties.Resources.resources
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject.csproj.GenerateResource.Cache
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject.exe
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject.pdb
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject.csprojResolveAssemblyReference.cache
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\ReviewResultsWindow.g.cs
+C:\Users\adamskoog\Documents\Visual Studio 2015\Projects\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\ReviewResultsWindow.baml
+C:\Users\corey\Downloads\YelpDatabaseFinalProject\YelpDatabaseFinalProject\YelpDatabaseFinalProject\bin\Debug\YelpDatabaseFinalProject.exe.config
+C:\Users\corey\Downloads\YelpDatabaseFinalProject\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject.exe
+C:\Users\corey\Downloads\YelpDatabaseFinalProject\YelpDatabaseFinalProject\YelpDatabaseFinalProject\obj\Debug\YelpDatabaseFinalProject.pdb
